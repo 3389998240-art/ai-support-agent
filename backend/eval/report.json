@@ -1,0 +1,46 @@
+{
+  "index": {
+    "chunks": 46,
+    "documents": 6,
+    "dim": 1024,
+    "embedder": "openai-text-embedding-v3",
+    "backend": "faiss",
+    "built_at": "2026-10-26T02:16:13+00:00"
+  },
+  "settings": {
+    "top_k": 6,
+    "min_score": 0.4,
+    "max_per_doc": 3
+  },
+  "counts": {
+    "answerable": 28,
+    "unanswerable": 8
+  },
+  "recall@1": 0.964,
+  "recall@3": 1.0,
+  "recall@5": 1.0,
+  "section@1": 1.0,
+  "mrr": 0.976,
+  "false_positive_rate": 0.25,
+  "gate_block_rate": 1.0,
+  "misses": [
+    {
+      "query": "会员年卡激活了能退款吗",
+      "expected": "01-退换货政策",
+      "rank": 3,
+      "top1": "02-退款规则与到账时效"
+    }
+  ],
+  "false_positives": [
+    {
+      "query": "股票怎么开户",
+      "score": 0.696,
+      "top1": "04-发票与保修服务"
+    },
+    {
+      "query": "你们公司的办公地址在哪里",
+      "score": 0.661,
+      "top1": "03-物流与配送规则"
+    }
+  ]
+}
