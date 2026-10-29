@@ -10,8 +10,6 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@esbuild/win32-x64": "^0.28.2",
-    "@rollup/rollup-win32-x64-msvc": "^4.65.0",
     "pinia": "^2.2.6",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
